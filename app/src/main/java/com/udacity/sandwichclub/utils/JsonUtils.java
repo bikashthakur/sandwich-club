@@ -60,12 +60,12 @@ public class JsonUtils {
         return null;
     }
 
-    private static List<String> convertJSONArrayToArrayList(JSONArray otherNamesArray) throws JSONException {
+    private static List<String> convertJSONArrayToArrayList(JSONArray data) throws JSONException {
 
         ArrayList<String> result = new ArrayList<>();
 
-        for (int i = 0; i < otherNamesArray.length(); i++) {
-            result.add(otherNamesArray.getString(i));
+        for (int i = 0; i < data.length(); i++) {
+            result.add(data.getString(i));
         }
 
         return result;
